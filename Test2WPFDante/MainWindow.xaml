@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="tekenKnop" Content="tekenKnop" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click"/>
+        <Button x:Name="vergrootknop" Content="vergrootKnop" HorizontalAlignment="Left" Margin="10,249,0,0" VerticalAlignment="Top" Width="103" Click="vergrootknop_Click"/>
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="319" Margin="118,0,0,0" VerticalAlignment="Top" Width="399" Background="#FF424242">
+            <Ellipse x:Name="cirkel" Fill="Blue" Height="100" Canvas.Left="10" Canvas.Top="10" Width="100" Stroke="yellow" StrokeThickness="5" MouseEnter="cirkel_MouseEnter" MouseLeave="cirkel_MouseLeave"/>
+        </Canvas>
+
     </Grid>
 </Window>

@@ -24,5 +24,34 @@ namespace Test2WPFDante
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Rectangle vierkant = new Rectangle();
+            vierkant.Height = 100;
+            vierkant.Width = 100;
+            vierkant.Margin = new Thickness(210, 10, 0, 0);
+            vierkant.Stroke = new SolidColorBrush(Colors.Yellow);
+            vierkant.StrokeThickness = 2;
+            canvas.Children.Add(vierkant);
+
+        }
+        
+        private void vergrootknop_Click(object sender, RoutedEventArgs e)
+        {
+            
+            cirkel.Width = 200;
+            cirkel.Height = 200;
+        }
+
+        private void cirkel_MouseEnter(object sender, MouseEventArgs e)
+        {
+            cirkel.Stroke = new SolidColorBrush(Colors.Black);
+        }
+
+        private void cirkel_MouseLeave(object sender, MouseEventArgs e)
+        {
+            cirkel.Stroke = new SolidColorBrush(Colors.Yellow);
+        }
     }
 }
